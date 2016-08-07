@@ -1,0 +1,7 @@
+- '12345': digits
+  deep: gajjar
+  priti: gajjar
+  sharvil: gajjar
+- 1
+- 2
+- xyz
