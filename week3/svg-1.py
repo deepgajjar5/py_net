@@ -86,4 +86,7 @@ filename2 = "out-octets-total.json"
 in_octets_list = get_output(filename1, in_octets_packets_total, out_octets_packets_total)
 out_octets_list = get_output(filename2, in_octets_packets_total, out_octets_packets_total)
 
+print in_octets_list
+print out_octets_list
+
 create_graph(in_octets_list, out_octets_list)
