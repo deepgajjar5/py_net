@@ -1,0 +1,11 @@
+---
+- hosts: arista
+  tasks:
+            - name: Primary interface ethernet4 
+              eos_config: command="no vlan 10, 15, 20"
+                                username={{ eapi_username }}
+                                password={{ eapi_password }}
+                                host={{ eapi_hostname }}
+                                port={{ eapi_port }}
+                                transport=https
+

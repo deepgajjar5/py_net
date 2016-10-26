@@ -1,0 +1,29 @@
+---
+- hosts: arista
+  tasks:
+            - name: Red VLAN creation and configuration
+              eos_vlan: name=red vlanid=10 state=present
+                        username={{ eapi_username }}
+                        password={{ eapi_password }}
+                        host={{ eapi_hostname }}
+                        port={{ eapi_port }}
+                        transport=https
+
+            - name: Green VLAN creation and configuration
+              eos_vlan: name=green vlanid=15 state=present
+                        username={{ eapi_username }}
+                        password={{ eapi_password }}
+                        host={{ eapi_hostname }}
+                        port={{ eapi_port }}
+                        transport=https
+
+            - name: Yellow VLAN creation and configuration
+              eos_vlan: name=yellow vlanid=20 state=present
+                        username={{ eapi_username }}
+                        password={{ eapi_password }}
+                        host={{ eapi_hostname }}
+                        port={{ eapi_port }}
+                        transport=https
+
+                
+                

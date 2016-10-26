@@ -1,0 +1,11 @@
+---
+- hosts: arista
+  tasks:
+            - name: Primary interface ethernet4 
+              eos_interface: name=Ethernet4 description="**IN USE**"
+                                username={{ eapi_username }}
+                                password={{ eapi_password }}
+                                host={{ eapi_hostname }}
+                                port={{ eapi_port }}
+                                transport=https
+

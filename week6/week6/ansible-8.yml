@@ -1,0 +1,12 @@
+---
+- hosts: cisco
+  tasks:
+            - name: Cisco file transfer 
+              cisco_file_transfer: 
+                                username={{ username }}
+                                password={{ password }}
+                                host={{ host }}
+                                enable_scp=1
+                                overwrite=1
+                                source_file="/home/dgajjar/ANSIBLE/deep-test.txt"
+                                dest_file="deep-test.txt"

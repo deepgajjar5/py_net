@@ -1,0 +1,11 @@
+---
+- hosts: arista
+  tasks:
+            - name: Primary interface ethernet4 
+              eos_switchport: name=Ethernet4 mode=access access_vlan=15 
+                                username={{ eapi_username }}
+                                password={{ eapi_password }}
+                                host={{ eapi_hostname }}
+                                port={{ eapi_port }}
+                                transport=https
+
