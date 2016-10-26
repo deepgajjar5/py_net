@@ -1,0 +1,13 @@
+---
+- hosts: local
+  tasks:
+    - name: Configuration file generation
+      template: src=/home/dgajjar/access_switch.j2
+                    dest=/home/dgajjar/ANSIBLE/CFGS/{{item.hostname}}.txt
+
+      with_items:
+        - { hostname: pynet_rtr1, ip_addr: 10.20.30.2, default_gateway: 10.20.30.1, access_vlan: 1, secret: 'deep', snmp_community: 'gajjar', SNMPv3: 'v3' }
+        - { hostname: pynet_rtr2, ip_addr: 10.20.31.2, default_gateway: 10.20.31.1, access_vlan: 2, secret: 'deep', snmp_community: 'gajjar', SNMPv3: 'v3' }
+        - { hostname: pynet_rtr3, ip_addr: 10.20.32.2, default_gateway: 10.20.32.1, access_vlan: 3, secret: 'deep', snmp_community: 'gajjar', SNMPv3: 'v3' }
+        - { hostname: pynet_rtr4, ip_addr: 10.20.33.2, default_gateway: 10.20.33.1, access_vlan: 4, secret: 'deep', snmp_community: 'gajjar', SNMPv3: 'v3' }
+        - { hostname: pynet_rtr5, ip_addr: 10.20.34.2, default_gateway: 10.20.34.1, access_vlan: 5, secret: 'deep', snmp_community: 'gajjar', SNMPv3: 'v3' }
