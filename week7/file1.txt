@@ -1,0 +1,20 @@
+Ethernet6 is up, line protocol is up (connected)
+  Hardware is Ethernet, address is 5254.ab04.a116 (bia 5254.ab04.a116)
+  Ethernet MTU 9214 bytes
+  Full-duplex, Unconfigured, auto negotiation: off, uni-link: n/a
+  Up 39 days, 3 hours, 34 minutes, 35 seconds
+  Loopback Mode : None
+  1 link status changes since last clear
+  Last clearing of "show interface" counters never
+  5 minutes input rate 0 bps (- with framing overhead), 0 packets/sec
+  5 minutes output rate 0 bps (- with framing overhead), 0 packets/sec
+     2675287 packets input, 394633192 bytes
+     Received 8477 broadcasts, 2426494 multicast
+     0 runts, 0 giants
+     0 input errors, 0 CRC, 0 alignment, 0 symbol, 0 input discards
+     0 PAUSE input
+     112849 packets output, 19743271 bytes
+     Sent 0 broadcasts, 112849 multicast
+     0 output errors, 0 collisions
+     0 late collision, 0 deferred, 0 output discards
+     0 PAUSE output

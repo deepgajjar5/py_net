@@ -1,0 +1,11 @@
+---
+- hosts: arista
+  tasks: 
+            - name: Basic module
+              ansible_module_deep: vlan_id=252 vlan_name=deepgajjar5
+                                username={{ eapi_username }}
+                                password={{ eapi_password }}
+                                host={{ eapi_hostname }}
+                                port={{ eapi_port }}
+                                transport=https
+
